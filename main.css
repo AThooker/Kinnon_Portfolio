@@ -1,0 +1,335 @@
+/*Common elements*/
+body {
+    font-size: 67.5%;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f6f7f6 url(assets/mobo.jpg) no-repeat fixed top center;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+h1 {
+    color: #effaf4;
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+ 
+}
+h2 {
+    color: #130c01;
+    font-size: 1.7em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: rgb(14, 1, 1);
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+a:hover {
+    color: rgb(20, 114, 138);
+}
+#resume a:hover{
+    color: rgb(2, 12, 2);
+}
+/*Header*/
+/*Nav Bars*/
+.navWrap {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.9em;
+    letter-spacing: 0.04em;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #98bbe9;
+    border-radius: 3px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+.navlink{
+    color: black;
+}
+
+.navWrap li{
+    float: none;
+    display: inline-block;
+    margin: 10px;
+    margin-top: -5px;
+    text-decoration: none;
+    height: 1.3em;
+}
+#resume{
+    float: left;
+}
+.intro h1{
+    font-family: Times, serif;
+    font-size: 65px;
+    margin-left: 250px;
+    margin-top: 400px;
+    margin-bottom: -240px;
+    text-shadow: 2px 2px grey;
+}
+#photoKeen{
+    border: 3px solid rgb(10, 0, 0);
+    border-radius: 40%;
+    width: 250px;
+    margin-left: 800px;
+    margin-top: -50px;
+    height: 50%;
+}
+h6 {
+    font-family: Times, serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 250px;
+    margin-top: 200px;
+    text-shadow: 1px 1px rgb(1, 10, 1);
+}
+/*projects*/
+
+#projects {
+    font-family: Times, serif;
+    font-size: 65px;
+    margin-top: 300px;
+    margin-left: 40%;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px grey;
+    padding-top: 60px;
+}
+.container{
+    width: 1200px;
+    min-height: 500px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgBox{
+    position: relative;
+    border: 5px solid #B0C4DE;
+    border-radius: 5px;
+}
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+
+}
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.container .box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .details
+{
+    transform: scaleY(1)
+}
+
+.container .box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.container .box .details .content h1
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.aboutAustin{
+    margin-top: 400px;
+}
+#about{
+    margin-left: 27%;
+    font-size: 65px;
+    text-shadow: 2px 2px grey;
+    padding-top: 60px;
+}
+/*ABOUT*/
+#description {
+    align-content: center;
+    width: 850px;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-right: #B0C4DE solid 5px;
+    border-left: #B0C4DE solid 5px;
+    margin-top: 20px;
+    margin-left: 230px;
+    font-size: 12px;
+   }
+   #description h1{
+       font-size: 30px;
+       font-weight: bold;
+   }
+   #skillsTitle{
+       margin-left: 43%;
+       margin-bottom: -20px;
+       font-size: 65px;
+       text-shadow: 2px 2px grey;
+       padding-top: 60px;
+   }
+   .skillswrap{
+       margin-top: 40px;
+       width: 760px;
+       height: 270px;
+       margin-left: 280px;
+       background-color: grey;
+       border: solid #B0C4DE 3px;
+       border-radius: 10%;
+   }
+   .skills ul li{
+       display: inline;
+       list-style-type: square;
+       font-size: 17px;
+       font-weight: bold;
+       margin-left: 20px;
+       color: black;
+   }
+   #tech {
+    text-decoration: underline;
+    margin-left: 8%;
+    padding-top: 30px;
+    font-size: 30px;
+   }
+   #soft {
+    text-decoration: underline;
+    margin-left: 8%;
+    padding-top: 10px;
+    font-size: 30px;
+   }
+   .contact{
+       margin-top: 600px;
+   }
+   #contact{
+    margin-left: 40%;
+    margin-bottom: 60px;
+    font-size: 65px;
+    text-shadow: 2px 2px grey;
+    padding-top: 60px;
+   }
+
+   input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  textarea {
+      display: block;
+      margin-bottom: 15px;
+      width: 90%;
+  }
+  
+  input[type=submit] {
+    width: 90%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #c75151;
+  }
+  
+  form {
+      width: 50%;
+    border-radius: 5px;
+    background-color: #B0C4DE;
+    padding: 20px;
+    margin-bottom: 180px;
+    margin-left: 100px;
+  }
+   input[type=submit]{
+       margin-top: 3px;
+       background-color: grey;
+   }
+   .social{
+       display: block;
+       margin-left: 870px;
+       width: 400px;
+       height: 200px;
+       margin-top: -400px;
+
+   }
+   .social a{
+       padding: 30px;
+   }
+   footer {
+    background-color: #B0C4DE;
+    height: 25px;
+    font-size: 1.2em;
+    color: rgb(19, 2, 2);
+    text-align: center;
+    padding: 1.5em 2.0em;
+    margin-top: 165px;
+    
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.5em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: rgb(2, 2, 17);
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(23, 56, 241);
+    text-decoration: underline;
+}
