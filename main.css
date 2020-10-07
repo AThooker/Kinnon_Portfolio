@@ -2,7 +2,7 @@
 body {
     font-size: 67.5%;
     font-family: 'Times New Roman', Times, serif;
-    background: #f6f7f6 url(assets/mobo.jpg) no-repeat fixed top center;
+    background: #fafcfc url(assets/groupWork.jpg) no-repeat center fixed;
     padding: 0;
     margin: 0;
     -webkit-background-size: 100% 100%;
@@ -11,12 +11,10 @@ body {
     -o-background-size: 100% 100%;
 }
 h1 {
-    color: #effaf4;
+    color: black;
     font-size: 2.0em;
     margin: 0.5em 0 0.5em 0;
     padding: 0;
-}
- 
 }
 h2 {
     color: #130c01;
@@ -32,7 +30,7 @@ p {
     margin: 0px 0.5em 0.75em 0px;
 }
 a:hover {
-    color: rgb(20, 114, 138);
+    color: white;
 }
 #resume a:hover{
     color: rgb(2, 12, 2);
@@ -45,25 +43,23 @@ a:hover {
     letter-spacing: 0.04em;
     padding: 0.5em;
     text-align: center;
-    background-color: #98bbe9;
+    background-color: #282a2c;
     border-radius: 3px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.6;
 }
-.navlink{
-    color: black;
+.navlink {
+    color: rgb(8, 69, 238);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.navWrap ul{
+}
 .navWrap li{
-    float: none;
     display: inline-block;
-    margin: 10px;
-    margin-top: -5px;
-    text-decoration: none;
-    height: 1.3em;
+    padding-right: 100px;
 }
 #resume{
     float: left;
@@ -72,8 +68,7 @@ a:hover {
     font-family: Times, serif;
     font-size: 65px;
     margin-left: 250px;
-    margin-top: 400px;
-    margin-bottom: -240px;
+    margin-top: 140px;
     text-shadow: 2px 2px grey;
 }
 #photoKeen{
@@ -84,86 +79,44 @@ a:hover {
     margin-top: -50px;
     height: 50%;
 }
-h6 {
-    font-family: Times, serif;
-    font-size: 30px;
-    color: white;
-    margin-left: 250px;
-    margin-top: 200px;
-    text-shadow: 1px 1px rgb(1, 10, 1);
-}
-/*projects*/
-
-#projects {
-    font-family: Times, serif;
-    font-size: 65px;
-    margin-top: 300px;
-    margin-left: 40%;
-    margin-bottom: 60px;
-    text-shadow: 2px 2px grey;
-    padding-top: 60px;
-}
-.container{
-    width: 1200px;
-    min-height: 500px;
-    margin: 70px auto 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-.container .box{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 25px;
-    margin-top: 70px;
-    box-sizing: border-box;
+.text {
+    overflow: hidden;
+    white-space: nowrap;
     display: inline-block;
-}
-.container .box .imgBox{
     position: relative;
-    border: 5px solid #B0C4DE;
-    border-radius: 5px;
+    margin-left: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    animation: typewriter;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
 }
-.container .box .imgBox img{
-    max-width: 100%;
-    transition: transform 2s;
-
-}
-.container .box:hover .imgBox img{
-    transform: scale(1.2);
-}
-.container .box .details
-{
+.text::after {
+    content: "|";
     position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,.8);
-    transform: scaleY(0);
-    transition: transform .5s;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
 }
-.container .box:hover .details
-{
-    transform: scaleY(1)
-}
-
-.container .box .details .content
-{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 15px;
-    color: #fff;
-}
-.container .box .details .content h1
-{
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-
+@keyframes typewriter {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 38em;
+    }
+  }
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
 .aboutAustin{
     margin-top: 400px;
 }
