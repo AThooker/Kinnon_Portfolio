@@ -11,7 +11,7 @@ body {
     -o-background-size: 100% 100%;
 }
 h1 {
-    color: black;
+    color: #130c01;
     font-size: 2.0em;
     margin: 0.5em 0 0.5em 0;
     padding: 0;
@@ -69,7 +69,7 @@ a:hover {
     font-size: 65px;
     margin-left: 250px;
     margin-top: 140px;
-    text-shadow: 2px 2px grey;
+    text-shadow: 2px 2px silver;
 }
 #photoKeen{
     border: 3px solid rgb(10, 0, 0);
@@ -84,7 +84,8 @@ a:hover {
     white-space: nowrap;
     display: inline-block;
     position: relative;
-    margin-left: 250px;
+    margin-left: 255px;
+    text-shadow: 2px 1px black;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -144,42 +145,7 @@ a:hover {
        font-size: 30px;
        font-weight: bold;
    }
-   #skillsTitle{
-       margin-left: 43%;
-       margin-bottom: -20px;
-       font-size: 65px;
-       text-shadow: 2px 2px grey;
-       padding-top: 60px;
-   }
-   .skillswrap{
-       margin-top: 40px;
-       width: 760px;
-       height: 270px;
-       margin-left: 280px;
-       background-color: grey;
-       border: solid #B0C4DE 3px;
-       border-radius: 10%;
-   }
-   .skills ul li{
-       display: inline;
-       list-style-type: square;
-       font-size: 17px;
-       font-weight: bold;
-       margin-left: 20px;
-       color: black;
-   }
-   #tech {
-    text-decoration: underline;
-    margin-left: 8%;
-    padding-top: 30px;
-    font-size: 30px;
-   }
-   #soft {
-    text-decoration: underline;
-    margin-left: 8%;
-    padding-top: 10px;
-    font-size: 30px;
-   }
+   
    .contact{
        margin-top: 600px;
    }
