@@ -55,11 +55,10 @@ a:hover {
     color: rgb(8, 69, 238);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navWrap ul{
-}
 .navWrap li{
     display: inline-block;
     padding-right: 100px;
+    margin: auto;
 }
 #resume{
     float: left;
@@ -90,7 +89,7 @@ a:hover {
     font-weight: bold;
     color: white;
     animation: typewriter;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
 }
@@ -104,21 +103,83 @@ a:hover {
 }
 @keyframes typewriter {
     0%, 100% {
-      width: 0;
+    width: 0;
     }
     20%, 80% {
-      width: 38em;
+    width: 38em;
     }
   }
   @keyframes caret {
     0%, 100% {
-      opacity: 0;
+    opacity: 0;
     }
     50% {
-      opacity: 1;
+    opacity: 1;
     }
   }
-.aboutAustin{
+.skillsWrap{
+    margin: auto;
+    text-align: center;
+    margin-top: 300px;
+  }
+#skills {
+    font-family: Times, serif;
+    font-size: 65px;
+    margin: auto;
+    text-shadow: 2px 2px silver;
+    padding-top: 60px;
+  }
+  .contain {
+      width: 1200px;
+      margin: 70px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .contain .box{
+      position: relative;
+      width: 300px;
+      height: 100px;
+      margin: 25px;
+      margin-top: 70px;
+      margin-left: 195px;
+      box-sizing: border-box;
+      border: 5px solid black;
+      display: inline-block;
+      transition: transform 2s;
+  }
+  .contain .box:hover {
+      transform: scale(1.2, 3);
+  }
+  .contain .box:hover .content {
+      transform: scaleY(1.2);
+  }
+  .contain .box .content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+  }
+.content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+}
+  #tech{
+    font-size: 45px;
+    margin-bottom: 
+  }
+  #personal {
+      font-size: 30px;
+  }
+.aboutWrap{
     margin-top: 400px;
 }
 #about{
