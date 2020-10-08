@@ -66,7 +66,8 @@ a:hover {
 .intro h1{
     font-family: Times, serif;
     font-size: 65px;
-    margin-left: 250px;
+    width: 100%;
+    text-align: center;
     margin-top: 140px;
     text-shadow: 2px 2px silver;
 }
@@ -260,7 +261,7 @@ a:hover {
   form {
       width: 50%;
     border-radius: 5px;
-    background-color: #B0C4DE;
+    background-color: rgb(83, 83, 83);
     padding: 20px;
     margin-bottom: 180px;
     margin-left: 100px;
@@ -281,7 +282,8 @@ a:hover {
        padding: 30px;
    }
    footer {
-    background-color: #B0C4DE;
+    background-color: rgb(8, 69, 238);
+    opacity: 0.6;
     height: 25px;
     font-size: 1.2em;
     color: rgb(19, 2, 2);
@@ -300,6 +302,7 @@ footer ul li {
     display: inline-block;
     padding: 0 0.5em 0 0;
     margin: 0;
+    color: black;
 }
 footer ul li::before {
     content: "| ";
@@ -310,6 +313,6 @@ footer a, footer a:visited {
     text-decoration: none;
 }
 footer a:hover {
-    color: rgb(23, 56, 241);
+    color: rgb(247, 247, 247);
     text-decoration: underline;
 }
