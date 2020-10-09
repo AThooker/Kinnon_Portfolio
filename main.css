@@ -2,7 +2,7 @@
 body {
     font-size: 67.5%;
     font-family: 'Times New Roman', Times, serif;
-    background: #fafcfc url(assets/groupWork.jpg) no-repeat center fixed;
+    background: #fafcfc url(assets/compPic.webp) no-repeat center fixed;
     padding: 0;
     margin: 0;
     -webkit-background-size: 100% 100%;
@@ -22,26 +22,19 @@ h2 {
     padding: 0px;
     margin: 0.5em 0 0.35em 0;
 }
-p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    color: rgb(14, 1, 1);
-    padding: 0px;
-    margin: 0px 0.5em 0.75em 0px;
-}
+
 a:hover {
     color: white;
 }
 #resume a:hover{
     color: rgb(2, 12, 2);
 }
-/*Header*/
 /*Nav Bars*/
 .navWrap {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.9em;
     letter-spacing: 0.04em;
-    padding: 0.5em;
+    padding: 1.2em 0.5em 0.5em 0.5em;
     text-align: center;
     background-color: #282a2c;
     border-radius: 3px;
@@ -60,25 +53,37 @@ a:hover {
     padding-right: 100px;
     margin: auto;
 }
-#resume{
+#photo{
     float: left;
+    margin-left: 50px;
+    border-radius: 8px;
 }
+#photo:hover {
+    margin-top: 20px;
+    transform: scale(2.5);
+    transition: transform .3s;
+}
+#photo:hover .navWrap {
+    transform: scaleY(2.5);
+}
+/*Header*/
 .intro h1{
     font-family: Times, serif;
     font-size: 65px;
     width: 100%;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 230px;
     text-shadow: 2px 2px silver;
 }
-#photoKeen{
+/*#photoKeen{
     border: 3px solid rgb(10, 0, 0);
     border-radius: 40%;
     width: 250px;
     margin-left: 800px;
     margin-top: -50px;
     height: 50%;
-}
+}*/
+/*SubHead*/
 .text {
     overflow: hidden;
     white-space: nowrap;
@@ -122,6 +127,8 @@ a:hover {
     margin: auto;
     text-align: center;
     margin-top: 300px;
+    display: grid;
+    /*background: white;*/
   }
 #skills {
     font-family: Times, serif;
@@ -144,12 +151,13 @@ a:hover {
       margin-top: 70px;
       margin-left: 195px;
       box-sizing: border-box;
+      box-shadow: 2px, 2px;
       border: 5px solid black;
       display: inline-block;
       transition: transform 2s;
   }
   .contain .box:hover {
-      transform: scale(1.2, 3);
+      transform: scale(1.2);
   }
   .contain .box:hover .content {
       transform: scaleY(1.2);
@@ -170,15 +178,19 @@ a:hover {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+    overflow: auto;
     font-size: 19px;
     color: #fff;
 }
+.list {
+    list-style-type: none;
+    display: inline-table;
+}
   #tech{
     font-size: 45px;
-    margin-bottom: 
   }
   #personal {
-      font-size: 30px;
+      font-size: 45px;
   }
 .aboutWrap{
     margin-top: 400px;
@@ -190,7 +202,7 @@ a:hover {
     padding-top: 60px;
 }
 /*ABOUT*/
-#description {
+.description {
     align-content: center;
     width: 850px;
     position: relative;
