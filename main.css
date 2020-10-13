@@ -127,6 +127,9 @@ a:hover {
     opacity: 1;
     }
   }
+  #myCarousel{
+      padding-top: 150px;
+  }
   .exp {
       width: 1300px;
       height: 550px;
@@ -161,6 +164,7 @@ a:hover {
     text-align: center;
     margin-top: 300px;
     display: grid;
+    padding-top: 100px;
     /*background: white;*/
   }
 #skills {
@@ -179,7 +183,7 @@ a:hover {
   .contain .box{
       position: relative;
       width: 300px;
-      height: 100px;
+      height: 250px;
       margin: 25px;
       margin-top: 70px;
       margin-left: 195px;
@@ -193,7 +197,7 @@ a:hover {
       transform: scale(1.2);
   }
   .contain .box:hover .content {
-      transform: scaleY(1.2);
+      transform: scaleY(1.0);
   }
   .contain .box .content {
     position: absolute;
