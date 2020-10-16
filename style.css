@@ -21,6 +21,14 @@ body {
     opacity: 0.6;
     margin-bottom: 100px;
 }
+#photo {
+    border-radius: 5px;
+}
+#photo:hover {
+    margin-top: 20px;
+    transform: scale(2.5);
+    transition: transform .3s;
+}
 /*Intro*/
 .headWrap {
     font-family: Times, serif;
@@ -111,8 +119,7 @@ body {
 }
 .box .imgBox{
     position: relative;
-    box-shadow: 2px black;
-    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(61, 60, 60);
 }
 .box .imgBox img{
     max-width: 100%;
@@ -125,7 +132,7 @@ body {
 .box .details
 {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 10px;
     bottom: 10px;
     right: 10px;
@@ -152,4 +159,143 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+}
+.skillsList li {
+    font-size: 20px;
+}
+/*About*/
+#about {
+    padding-top: 50px;
+}
+.aboutWrap{
+    margin-top: 400px;
+    font-family: Times, serif;
+    text-shadow: 2px 2px silver;
+}
+.about{
+    font-size: 70px;
+    text-shadow: 2px 2px grey;
+}
+/*ABOUT*/
+#description {
+    margin-left: 35px;
+    background-color: #fff;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-right: #B0C4DE solid 5px;
+    border-left: #B0C4DE solid 5px;
+    font-size: 18px;
+   }
+   #description h1{
+       font-size: 30px;
+       font-weight: bold;
+   }
+   /*Contact*/
+   .contact{
+    margin-top: 600px;
+}
+#contact{
+ font-size: 95px;
+ margin-left: 35px;
+ text-shadow: 2px 2px grey;
+ padding-top: 60px;
+ display: block;
+}
+label {
+    color: white;
+    font-size: 18px;
+}
+input[type=text] {
+ width: 90%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: block;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+input[type=email] {
+ width: 90%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: block;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+textarea {
+   display: block;
+   margin-bottom: 15px;
+   width: 90%;
+}
+
+input[type=submit] {
+ width: 90%;
+ font-size: 16px;
+ background-color: rgb(29, 89, 158);
+ color: white;
+ padding: 14px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: #c75151;
+}
+
+form {
+   width: 650px;
+ border-radius: 5px;
+ background-color: rgb(31, 30, 30);
+ opacity: 0.9;
+ padding-left: 40px;
+ padding-bottom: 20px;
+ margin-bottom: 180px;
+ margin-left: 100px;
+}
+input[type=submit]{
+    margin-top: 3px;
+    background-color: rgb(201, 199, 199);
+}
+.social{
+    margin-top: 105px;
+}
+.social a{
+    padding: 30px;
+}
+footer {
+ background-color: black;
+ opacity: 0.6;
+ height: 25px;
+ font-size: 1.2em;
+ color: rgb(8,69,238);
+ text-align: center;
+ padding: 1.5em 2.0em;
+ margin-top: 165px;
+ 
+}
+footer ul#menuFooter {
+ display: inline-block;
+ list-style: none;
+ margin: 0 0 0 0.6em;
+ padding: 0;
+}
+footer ul li {
+ display: inline-block;
+ padding: 0 0.5em 0 0;
+ margin: 0;
+ color: rgb(8, 69, 238);
+}
+footer ul li::before {
+ content: "| ";
+ padding-right: 0.7em;
+}
+footer a, footer a:visited {
+ color: rgb(8, 69, 238);
+ text-decoration: none;
+}
+footer a:hover {
+ color: rgb(247, 247, 247);
+ text-decoration: underline;
 }
