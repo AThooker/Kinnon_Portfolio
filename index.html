@@ -13,7 +13,7 @@
   <body>
     <header>
       <!--Nav Bar-->
-        <section class="navWrap">
+        <div class="fixed-top">
           <div class="container">
             <div class="row">
               <div class="col-sm-1">
@@ -41,12 +41,12 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
             <section class="headWrap">
             <div class="row justify-content-end">
                 <div class="col-9"><h1 class="name" style="font-size: 80px;"><b>Kinnon Roudebush</b></h1></div>
             </div>
-            <!--headline for keen-->
+            <!--headline-->
             <div class="row justify-content-end">
               
               <div class="col-sm-9"><h6 class="text" style="font-size: 30px;">IT Engineer | Problem-Solver | Continuous Learner</h6></div> 
@@ -58,54 +58,62 @@
     <div id="experience"></div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Carousel indicators -->
+      <div class="row justify-content-center">
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+      </div>
       <!-- Wrapper for carousel items -->
       <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="exp">
+              <div class="inner">
               <div class="row justify-content-center">
-              <div class="col-sm-2"><h1 class="head">Job One</h1></div>
+              <div class="col-sm-2"><h1 class="heading">Job One</h1></div>
               </div>
               <div class="row justify-content-center">
               <div class="col-sm-2"><h2 class="subHead">Company</h2></div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-sm-7"><p class="job">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus, libero quis aliquam harum amet voluptate expedita nisi. 
+                <div class="col-sm-7"><p class="job" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus, libero quis aliquam harum amet voluptate expedita nisi. 
                Veniam nesciunt rerum libero quos veritatis ipsum adipisci architecto dicta soluta optio!</p></div>
               </div>
             </div> 
+            </div>
           </div>
           <div class="carousel-item">
             <div class="exp">
+              <div class="inner">
               <div class="row justify-content-center">
-              <div class="col-sm-2"><h1 class="head">Job Two</h1></div>
+              <div class="col-sm-2"><h1 class="heading">Job Two</h1></div>
               </div>
               <div class="row justify-content-center">
               <div class="col-sm-2"><h2 class="subHead">Company</h2></div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-sm-7"><p class="job">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus, libero quis aliquam harum amet voluptate expedita nisi. 
+                <div class="col-sm-7"><p class="job" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus, libero quis aliquam harum amet voluptate expedita nisi. 
                Veniam nesciunt rerum libero quos veritatis ipsum adipisci architecto dicta soluta optio!</p></div>
               </div>
             </div> 
+            </div>
           </div>
           <div class="carousel-item">
             <div class="exp">
+              <div class="inner">
               <div class="row justify-content-center">
-              <div class="col-sm-2"><h1 class="head">Job Three</h1></div>
+              <div class="col-sm-2"><h1 class="heading">Job Three</h1></div>
               </div>
               <div class="row justify-content-center">
                 <div class="col-sm-2"><h2 class="subHead">Company</h2></div>
                 </div>
               <div class="row justify-content-center">
-                <div class="col-sm-7"><p class="job">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus, libero quis aliquam harum amet voluptate expedita nisi. 
+                <div class="col-sm-7"><p class="job" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus, libero quis aliquam harum amet voluptate expedita nisi. 
                Veniam nesciunt rerum libero quos veritatis ipsum adipisci architecto dicta soluta optio!</p></div>
               </div>
             </div> 
+            </div>
           </div>
       </div>
       <!-- Carousel controls -->
@@ -116,33 +124,33 @@
           <span class="carousel-control-next-icon"></span>
       </a>
   </div>
-    <!--page 3-->
-    <section class="skillsWrap">
+    <!--page 3-->    
+    <section class="skillsWrap" id="skills">
       <div class="row justify-content-center">
-        <div class="col-sm-2"><h1 class="head">Skills</h1></div>
+        <div class="col-sm-1"><h1 class="head">Skills</h1></div>
         </div>
         <div class="row justify-content-end">
-          <div class="col-sm-4">
-          <span id="tech">Technical</span>
-          <div class="content">
-          <ul class="list">
-            <li>Tech</li>
-            <li>Tech</li>
-            <li>Tech</li>
-            <li>Tech</li>
-            <li>Tech</li>
-          </ul>
-          </div>
-          </div>
           <div class="col-sm-5">
-            <span id="personal">Personal</span>
-            <div class="content">
-              <ul class="list">
-                <li>Personal</li>
-                <li>Personal</li>
-                <li>Personal</li>
-                <li>Personal</li>
-            </ul>
+            <div class="box">
+              <div class="imgBox">
+              <img src="assets/groupWork.jpg" alt="Technical Skills" height="300" width="300">
+              </div>
+              <div class="details">
+                <div class="content">
+                <h1>Technical</h1></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-5">
+            <div class="box">
+              <div class="imgBox">
+              <img src="assets/compPic.webp" alt="Technical Skills" height="300" width="300">
+              </div>
+              <div class="details">
+                <div class="content">
+                <h1>Personal</h1></div>
+              </div>
             </div>
           </div>
           </div>
@@ -151,7 +159,7 @@
     </section>
     <!--page 3-->
     <section class="aboutWrap">
-        <h1 id="about">Get to know Kinnon</h1>
+        <h1 id="about">Get To Know Kinnon</h1>
           <div class="description">
           <!--description-->
           <h1>About</h1>

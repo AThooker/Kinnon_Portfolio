@@ -9,7 +9,8 @@ body {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
 }
-.navWrap {
+/*Navbar*/
+.fixed-top {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.9em;
     letter-spacing: 0.04em;
@@ -18,7 +19,9 @@ body {
     padding-top: 0.5em;
     z-index: 1;
     opacity: 0.6;
+    margin-bottom: 100px;
 }
+/*Intro*/
 .headWrap {
     font-family: Times, serif;
     font-size: 85px !important;
@@ -63,3 +66,90 @@ body {
     opacity: 1;
     }
   }
+  /*Experiences*/
+  .exp {
+    width: 100%;
+    height: 400px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    background-color: silver;
+    opacity: 0.6;
+    margin: auto;
+    color: white;
+}
+.inner {
+    background-color: black;
+    opacity: 0.9;
+    margin: auto;
+    height: 98%;
+    width: 89%;
+    padding-top: 50px;
+}
+#myCarousel{
+    padding-top: 150px;
+}
+/*Skills*/
+.skillsWrap{
+    margin: auto;
+    margin-top: 300px;
+    /*background: white;*/
+  }
+  #skills {
+      padding-top: 120px;
+  }
+  .head{
+      font-size: 60px;
+      text-shadow: 2px .5px silver;
+  }
+  .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.box .imgBox{
+    position: relative;
+    box-shadow: 2px black;
+    border-radius: 5px;
+}
+.box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+
+}
+.box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.box .details
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.box:hover .details
+{
+    transform: scaleY(1)
+}
+
+.box .details .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.box .details .content h1
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
